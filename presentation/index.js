@@ -85,6 +85,28 @@ export default class Presentation extends React.Component {
             <ListItem>Evolve your API without versions</ListItem>
           </List>
         </Slide>
+        <Slide>
+          <Heading size={6} textColor="tertiary">Works with different servers</Heading>
+          <List>
+            <ListItem>Javascript (reference implementation)</ListItem>
+            <ListItem>Java</ListItem>
+            <ListItem>.Net</ListItem>
+            <ListItem>PHP</ListItem>
+            <ListItem>Hack (this is what Facebook uses)</ListItem>
+            <ListItem>And others</ListItem>
+          </List>
+        </Slide>
+        <Slide>
+          <Heading size={6} textColor="tertiary">Client libraries</Heading>
+          <List>
+            <ListItem>Plain HTTP request</ListItem>
+            <ListItem>Relay (Facebooks client for React)</ListItem>
+            <ListItem>Apollo (bindings for React and Angular)</ListItem>
+          </List>
+        </Slide>
+        <Slide>
+          <Heading size={3} textColor="tertiary">DEMO</Heading>
+        </Slide>
       </Deck>
     );
   }
