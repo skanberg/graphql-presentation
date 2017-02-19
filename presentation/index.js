@@ -48,8 +48,8 @@ const theme = createTheme({
 export default class Presentation extends React.Component {
   render() {
     return (
-      <Deck transition={["zoom", "slide"]} transitionDuration={500} theme={theme}>
-        <Slide transition={["zoom"]} bgColor="primary">
+      <Deck transition={["slide"]} transitionDuration={500} theme={theme}>
+        <Slide bgColor="primary">
           <Image src={images.logo} height={200}/>
           <Heading size={1} fit lineHeight={1} textColor="secondary">
             GraphQL
@@ -58,29 +58,32 @@ export default class Presentation extends React.Component {
             A presentation by Fredrik Skånberg for ReactJS Göteborg
           </Text>
         </Slide>
-        <Slide transition={["fade"]} bgColor="tertiary">
-          <Heading size={6} textColor="primary" caps>Typography</Heading>
-          <Heading size={1} textColor="secondary">Heading 1</Heading>
-          <Heading size={2} textColor="secondary">Heading 2</Heading>
-          <Heading size={3} textColor="secondary">Heading 3</Heading>
-          <Heading size={4} textColor="secondary">Heading 4</Heading>
-          <Heading size={5} textColor="secondary">Heading 5</Heading>
-          <Text size={6} textColor="secondary">Standard text</Text>
-        </Slide>
-        <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
-          <Heading size={6} textColor="secondary" caps>Standard List</Heading>
+        <Slide bgColor="primary">
+          <Heading size={6} textColor="tertiary">What is GraphQL</Heading>
           <List>
-            <ListItem>Item 1</ListItem>
-            <ListItem>Item 2</ListItem>
-            <ListItem>Item 3</ListItem>
-            <ListItem>Item 4</ListItem>
+            <ListItem>A data query language</ListItem>
+            <ListItem>Developed by Facebook 2012</ListItem>
+            <ListItem>Open sourced 2015</ListItem>
           </List>
         </Slide>
-        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
-          <BlockQuote>
-            <Quote>Example Quote</Quote>
-            <Cite>Author</Cite>
-          </BlockQuote>
+        <Slide>
+          <Text>Many applications have no formalized client-server contract. Developers access server capabilities through ad hoc endpoints and write custom code to fetch the data they need.</Text>
+        </Slide>
+        <Slide>
+          <Text>Facebook needed a data fetching API that could be used for their different clients: Web, iOS and Android.</Text>
+        </Slide>
+        <Slide>
+          <Text>With GraphQL, no more ad hoc endpoints or object retrieval with multiple roundtrips to access server data. Instead an elegant query dispatched to a single endpoint.</Text>
+        </Slide>
+        <Slide>
+          <Heading size={6} textColor="tertiary">With GraphQL</Heading>
+          <List fit>
+            <ListItem>Ask for what you need, get exactly that</ListItem>
+            <ListItem>Get many resources in a single request</ListItem>
+            <ListItem>Uses a type system</ListItem>
+            <ListItem>Powerful developer tools</ListItem>
+            <ListItem>Evolve your API without versions</ListItem>
+          </List>
         </Slide>
       </Deck>
     );
