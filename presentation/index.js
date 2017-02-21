@@ -115,7 +115,17 @@ export default class Presentation extends React.Component {
         <Slide>
           <Heading size={3} textColor="tertiary">DEMO</Heading>
         </Slide>
+        <Slide>
+          <Heading size={6} textColor="tertiary">Resources</Heading>
+          <List>
+            <ListItem><a href="http://graphql.org/">http://graphql.org/</a></ListItem>
+            <ListItem><a href="https://github.com/graphql/graphiql">https://github.com/graphql/graphiql</a></ListItem>
+            <ListItem><a href="http://dev.apollodata.com/">http://dev.apollodata.com/</a></ListItem>
+            <ListItem><a href="https://goo.gl/bYPKC9">https://goo.gl/bYPKC9</a></ListItem>
+          </List>
+        </Slide>
       </Deck>
     );
   }
 }
+
