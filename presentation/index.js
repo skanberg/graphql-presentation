@@ -105,6 +105,14 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
         <Slide>
+          <Heading size={6} textColor="tertiary">Type of operations</Heading>
+          <List>
+            <ListItem>Query - Used for fetching data </ListItem>
+            <ListItem>Mutation - Used for writing data</ListItem>
+            <ListItem>Subscription - Server-side data pushing</ListItem>
+          </List>
+        </Slide>
+        <Slide>
           <Heading size={3} textColor="tertiary">DEMO</Heading>
         </Slide>
       </Deck>
